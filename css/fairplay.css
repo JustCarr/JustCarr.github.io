@@ -410,12 +410,6 @@ nav {
     
 
 @media screen and (max-width: 800px) {
-    .grid-container-cols-12 {
-        grid-template-columns: 1fr;
-    }
-    .button-nav {
-        display: none;
-    }
     #nav-menu {
         justify-content: center;
         align-items: center;
@@ -438,7 +432,13 @@ nav {
     }  
     .case-body-copy {
         font-size: 1rem;
-    }    
+    } 
+    .footer-nav-item {
+        padding: 2% .5% 5% .5%;
+    }
+    .footer-nav-text {
+        font-size: .8rem;
+    }   
 }      
 
 @media screen and (max-width: 600px) {
@@ -497,6 +497,12 @@ nav {
     .user-insight-container {
         width: 100vw;
         height: 60%;
+    }
+    .style-guide2 {
+        padding-left: 6%;
+    }
+    .footer-nav-item {
+        padding: 0% .5% 3% .5%;
     }
   
 } 
