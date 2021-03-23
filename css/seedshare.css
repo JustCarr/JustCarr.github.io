@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background: white;
+    overflow-x: hidden;
+}
+
+
+nav {
+    display: flex;
+    padding: 2% 8% 0% 8%;
+}
+
+.menu {
+    display: flex; 
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    align-content: flex-start;
+    align-self: center;
+}
+
+.menu div {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 100ms linear;
+    user-select: none;
+}
+
+.menu div:hover {
+    color: #DEA562;
+}
+
+.menu .item {
+    text-decoration: none;
+    max-width: 0;
+    opacity: 0;
+    padding: 5px 0;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    transition-delay: 50ms;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color:  #DEA562;
+}
+
+.menu.expanded .item {
+    max-width: 300px;
+    opacity: 1;
+    padding: 5px 20px;
+}
+
+.menu .separator {
+    height: 1.5rem;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #FFFFFF;
+}
+
+.menu div.image-close {
+    height: 24px;
+    width: 24px;
+    fill: #FFFFFF;
+    padding: 5px 20px;
+}
+
+.menu.expanded div.image-close {
+    transform: rotate(45deg);
+    transition: all 50ms linear;
+}
+
+.menu div.item-close {
+    max-width: 300px;
+    opacity: 1;
+    padding: 5px 20px;
+}
+
+.menu.expanded div.item-close {
+    max-width: 0;
+    opacity: 0;
+    padding: 5px 0;
+    transition: all 50ms ease-out;
+}
+
+.menu div:hover, .menu div.close svg:hover {
+    fill: #DEA562;
+  }
+
+
+.cover-container {
+    padding: 0% 0% 0% 8%;
+}
+
+.cover-col-left {
+    padding-top: 10%;
+}
+
+.seed-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.cover-header {
+    text-align: center;
+    padding: 8% 5% 0% 5%;
+    font-family: 'PT Serif', serif;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    font-weight: 700;
+}
+
+.cover-image {
+    width: 100%;
+}
+
+.spacer1 {
+    height: 2rem;
+}
+
+.container-project-details {
+    width: 100%;
+    padding: 0% 8% 0% 8%;
+}
+
+.project-details {
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.case-study-headings {
+    font-family: 'PT Serif', serif;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.case-body-copy {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.ss-onboarding {
+    width: 100%;
+    height: auto;
+}
+
+.spacer2 {
+    height: 5rem;
+}
+
+.zucchini-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.ca-container {
+    width: 100%;
+    height: auto;
+    padding: 0% 5% 0% 5%;
+}
+
+.competitor-image {
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+    .grid-nav-container {
+        grid-template-columns: 1fr;
+    }    
+    #nav-menu {
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+    }
+    .cover-col-left {
+        padding-top: 7%;
+    }
+    .seed-logo {
+        width: 40%;
+    }
+    .cover-header {    
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }  
+    .case-study-headings {
+        font-size: 1.6rem;
+    }   
+    .case-body-copy {
+        font-size: 1rem;
+        padding-right: 1rem;
+    }    
+    .zucchini-image {
+        width: 90%;
+    }
+}  
+
+@media screen and (max-width: 600px) {
+    .cover-header {    
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    .spacer2 {
+        height: 2rem;
+    }
+    .zucchini-image {
+        width: 80%;
+        padding-bottom: 10%;
+    }
+    .project-details {
+        width: 100%;
+    }
+    
+
+
+}

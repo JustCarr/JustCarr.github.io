@@ -1,0 +1,489 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background: #2c2c2c;
+    overflow-x: hidden;
+}
+
+
+nav {
+    display: flex;
+    padding: 2% 8% 0% 8%;
+}
+
+.menu {
+    display: flex; 
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+#logo {
+    display: flex;
+    align-content: flex-start;
+    align-self: center;
+    z-index: 9001;
+}
+
+.menu div {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 100ms linear;
+    user-select: none;
+}
+
+.menu div:hover {
+    color: #DEA562;
+}
+
+.menu .item {
+    max-width: 0;
+    opacity: 0;
+    padding: 5px 0;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    transition-delay: 50ms;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color:  #DEA562;
+}
+
+.menu.expanded .item {
+    max-width: 300px;
+    opacity: 1;
+    padding: 5px 20px;
+}
+
+.menu .separator {
+    height: 1.5rem;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #FFFFFF;
+}
+
+.menu div.image-close {
+    height: 24px;
+    width: 24px;
+    fill: #FFFFFF;
+    margin: 0 12px;
+}
+
+.menu.expanded div.image-close {
+    transform: rotate(45deg);
+    transition: all 50ms linear;
+}
+
+.menu div.item-close {
+    max-width: 300px;
+    opacity: 1;
+    padding: 5px 20px;
+}
+
+.menu.expanded div.item-close {
+    max-width: 0;
+    opacity: 0;
+    padding: 5px 0;
+    transition: all 50ms ease-out;
+}
+
+.menu div:hover, .menu div.close svg:hover {
+    fill: #DEA562;
+}
+
+.menu-mobile  {
+    display: none;
+    flex-grow: 1; 
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+.menu-mobile .open-menu {
+    cursor: pointer;
+    transition: color 100ms linear;
+    user-select: none;
+    fill: #FFFFFF;
+}
+
+.menu-mobile.expanded .open-menu {
+    display: none;
+}
+
+.menu-mobile.expanded .close-menu {
+    display: block;
+}
+
+.menu-mobile .close-menu {
+    display: none;
+    z-index: 9001;
+    cursor: pointer;
+    transition: color 100ms linear;
+    user-select: none;
+    fill: #FFFFFF;
+}
+
+.menu-mobile .open-menu:hover, .menu-mobile .close-menu:hover {
+    color: #B67F41;
+}
+
+.menu-mobile.expanded .close-menu {
+    display: block;
+}
+
+.menu-mobile .menu-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9000;
+    top: 0;
+    left: 0;
+    background-color: #2C2C2C;
+    padding: 130px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-mobile.expanded .menu-overlay {
+    display: block;
+}
+
+.menu-mobile .menu-overlay a {
+    display: block;
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-mobile .menu-overlay a:hover {
+    color: #B67F41;
+}
+
+
+.hp-header {
+    width: 100%;
+    padding: 8% 8% 0% 8%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+.spacer1 {
+    height: 1rem;
+}
+
+.hero-image1 {
+    padding-left: 80%;
+}
+
+.hero-image2 {
+    padding-left: 20%;
+}
+
+.ux-ui-text {
+    padding: 0% 8% 0% 8%;
+    font-size: 1.5rem;
+    color: #B68042;
+}
+.scroll {
+    padding-top: 1%;
+    padding-left: 50%;
+}
+
+.seed-share-container {
+    padding: 0% 8% 0% 5%;
+}
+
+.seed-share-image {
+    width: 100%;
+    height: auto;
+} 
+
+.case-study-title {
+    padding: 15% 0% 0% 10%;
+    background: url(../Images/Line_Flower.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.case-study-title p1 {
+    color: #B68042;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.case-study-title p2 {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.ss-case-study-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.ss-case-study-link:hover {
+    color:  #B68042;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.background-hc {
+    padding: 0% 8% 0% 8%;
+    width: 100%;
+    height: auto;
+}
+
+.ccs-image {
+    width: 100%;
+    height: auto;
+} 
+
+.case-study-title2, .case-study-title3 {
+    padding: 10% 5% 0% 0%;
+}
+
+.case-study-title2 p1 {
+    color: #B68042;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.case-study-title2 p2 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.ccs-case-study-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.ccs-case-study-link:hover {
+    color:  #B68042;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.case-study-title3 p1 {
+    color: #B68042;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.case-study-title3 p2 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.fp-case-study-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.fp-case-study-link:hover {
+    color:  #B68042;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.fp-container {
+    padding: 0% 8% 0% 8%;
+}
+
+.fp-image {
+    width: 95%;
+    height: auto;
+} 
+
+.footer-nav-item {
+    padding: 2% 1% 2% 1%;
+}
+
+
+.footer-nav-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-nav-text:hover {
+    color:  #DEA562;
+    cursor: pointer;
+}
+
+.spacer2 {
+    height: 5rem;
+}
+
+.spacer3 {
+    height: 5rem;
+}
+
+.spacer4 {
+    height: 7rem;
+}
+
+@media only screen and (max-width: 1020px) {
+    .menu-mobile  {
+        display: flex;
+    }
+    .menu  {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .grid-nav-container {
+        grid-template-columns: 1fr;
+    }    
+    #nav-menu {
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+    }
+    .hero-image1 {
+        padding-left: 30%;
+        transform: scale(.8);
+    }
+    .hero-image2 {
+        padding-left: 10%;
+        transform: scale(.8);        
+    }
+    .scroll {
+        display: none;
+    }
+    .case-study-title p1 {
+        font-size: .9rem;
+    }
+    .case-study-title p2 {
+        font-size: .8rem;
+        line-height: .1rem;
+    } 
+    .ss-case-study-link {
+        font-size: .8rem;
+    }  
+    .case-study-title2 p1 {
+        font-size: .9rem;
+    }
+    .case-study-title2 {
+        padding: 8% 5% 0% 0%;
+    }
+    .case-study-title2 p2 {
+        font-size: .8rem;
+        line-height: .1rem;
+    } 
+    .ccs-case-study-link {
+        font-size: .8rem;
+    }  
+    .case-study-title3 {
+        padding: 8% 0% 0% 0%;
+    }
+    .case-study-title3 p1 {
+        font-size: .9rem;
+        line-height: .1rem;
+    } 
+    .case-study-title3 p2 {
+        font-size: .8rem;
+        line-height: .1rem;
+    } 
+    .fp-case-study-link {
+        font-size: .8rem;
+        line-height: .1rem;
+    }  
+    .background-hc {
+        transform: scale(.7); 
+        padding: 0% 2% 0% 2%;
+    }
+    .footer-nav-item {
+        padding: 2% .5% 5% .5%;
+    }
+    .footer-nav-text {
+        font-size: .8rem;
+    }
+    .spacer2 {
+        height: 1.3rem;
+    }
+    .spacer3 {
+        height: 2.5rem;
+    }  
+    .spacer4 {
+        height: 5rem;
+    }   
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .hp-header {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    .spacer1 {
+        display: none;
+    }
+    .hero-image1 {
+        padding-left: 32%;
+        transform: scale(.7);
+    }
+    .hero-image2 {
+        display: none;        
+    }
+    .spacer2 {
+        height: 1rem;
+    }
+    .ux-ui-text {
+        font-size: 1.2rem;
+    }
+    .scroll {
+        padding-top: 3%;
+        padding-left: 40%;
+        transform: scale(.9);
+    }
+    .case-study-title {
+        padding: 5% 0% 0% 8%;
+    }
+
+    .background-hc {
+        transform: scale(.4); 
+        padding: none;
+    }
+    .case-study-title2 {
+        padding: 5% 0% 0% 8%;
+    }
+    .case-study-title3 {
+        padding: 8% 0% 0% 8%;
+    }
+    .footer-nav-item {
+        padding: 0% .5% 3% .5%;
+    }
+
+}

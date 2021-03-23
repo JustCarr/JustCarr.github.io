@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background: white;
+    overflow-x: hidden;
+}
+
+nav {
+    height: 130px;
+    width: 100%;
+    background-color: #2c2c2c;
+    padding: 0% 8% 0% 8%;
+}    
+
+.grid-nav-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#logo {
+    justify-self: start;
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 0.4rem;
+}
+
+#nav-menu {
+    grid-column: 12 / 13;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.3);
+    display: none;
+}
+
+.case-study-nav {
+    padding: 0% 8% 0% 8%; 
+}
+
+.btn-link {
+    color: black;
+    font-size: 0.9rem;
+    padding-left: 0;
+    padding-right: 1.2rem;  
+}
+
+.btn-link:hover {
+    color: #B68042;
+
+}
+
+.spacer3 {
+    height: 4rem;
+}
+
+.container-cover {
+    padding: 0% 8% 0% 8%;
+}
+
+.Fairplay-header h8 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-shadow: 3px 1px #E5C3A9;
+}
+
+
+.cover-details  {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cover-image {
+    width: 100%;
+    padding: 0;
+}
+
+.container-project-details {
+    width: 100%;
+    padding: 0% 8% 0% 8%;
+}
+
+.project-details {
+    width: 90%;
+    padding-bottom: 1rem;
+}
+
+.case-study-headings {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.case-body-copy {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.container-problem-solution {
+    width: 100%;
+    padding: 0% 8% 0% 8%;
+}
+
+.ps-image-container {
+    width: 100vw;
+    padding: 0;
+}
+
+.sml-heading {
+    padding-left: 8%;
+    font-weight: 100;
+}
+
+.FP-image1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-wireflow {
+    padding: 0% 8% 0% 8%;
+}
+
+.survey-container {
+    padding: 0% 8% 0% 8%;
+}
+
+.survey-image {
+    width: 100%;
+}
+
+.persona-container {
+    width: 100%;
+    background-color: black;
+    padding: 0% 0% 0% 8%;
+}
+
+.FP-persona-image {
+    width: 100%;
+    padding: 0;
+}
+
+.case-study-headings-white {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.case-body-copy-white {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.user-insight-container {
+    background: url(../images/orange_blob_grass.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90%;
+}
+
+.style-guide-container {
+    width: 100%;
+    padding: 0;
+}
+
+.style-guide1 {
+    width: 100%;
+    padding: 0;
+}
+
+.style-guide2 {
+    width: 100%;
+    padding: 0;
+}
+
+.case-study-headings2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: black;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    padding: 7% 8% 0% 17%;
+}
+
+.spacer2 {
+    height: 1.7rem;
+    background-color: black;
+}
+
+.full-image-container {
+    padding: 0;
+    width: 100%;
+}
+
+.full-image {
+    width: 100vw;
+}
+
+.full-image2 {
+    padding: 3% 8% 3% 8%;
+    width: 100%;
+}
+
+
+.case-study-headings3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: black;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    padding: 10% 8% 2rem 8%;
+}
+
+.case-body-copy3 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    line-height: 1.5;
+    padding: 0% 15% 0% 8%;
+}
+
+.case-study-headings4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: black;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    padding: 5% 8% 0% 8%;
+}
+
+.final-thoughts-container {
+    padding: 0% 8% 0% 8%;
+}
+
+.spacer4 {
+    height: 5rem;
+}
+
+.footer-nav-item {
+    padding: 2%;
+}
+
+.footer-nav-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-nav-text:hover {
+    color:  #B68042;
+    cursor: pointer;
+}
+    
+
+
+
+@media screen and (max-width: 800px) {
+    .grid-container-cols-12 {
+        grid-template-columns: 1fr;
+    }
+    .button-nav {
+        display: none;
+    }
+    #nav-menu {
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+    }
+    .Fairplay-header h8 {
+        font-size: 2.8rem;
+        line-height: 2.6rem;
+        z-index: 1;
+    }    
+    .cover-details  {
+        font-size: .8rem;
+    }
+    .case-body-copy3 {
+        font-size: 1.5rem;   
+    } 
+    .user-insight-container {
+        width: 100vw;
+        height: 55%;
+    }  
+    .case-body-copy {
+        font-size: 1rem;
+    }    
+}      
+
+@media screen and (max-width: 600px) {
+   
+    .spacer3 {
+        height: 1.5rem;
+    }
+    .case-study-headings {
+        font-size: 1.8rem;
+    }
+    .case-study-headings-white {
+        font-size: 1.8rem;
+        padding: 8% 8% 8% 8%;
+    }
+    .case-body-copy {
+        padding-right: 0;
+    }
+    .case-body-copy-white {
+        padding: 0% 8% 8% 8%;
+        font-size: 1rem;
+    }
+    .case-study-headings-white {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+    .project-details {
+        width: 100%;
+    }
+    .FP-persona-image {
+        width: 100vw;
+    }
+    .persona-container {
+        padding: 0;
+    }
+    .user-insight-container {
+        padding: 0;
+    }    
+    .case-study-headings2 {
+        padding: 0% 8% 0% 8%;
+    }
+    .spacer2 {
+        height: 0.8rem;
+    }
+    .case-study-headings2 {
+        font-size: 1.8rem;
+    }    
+    .case-study-headings3 {
+        font-size: 1.8rem;
+    }
+    .case-study-headings4 {
+        font-size: 1.8rem;
+    }    
+    .case-body-copy3 {
+        font-size: 1rem;   
+    }
+    .user-insight-container {
+        width: 100vw;
+        height: 60%;
+    }
+  
+} 
