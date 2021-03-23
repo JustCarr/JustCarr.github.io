@@ -37,7 +37,7 @@ nav {
 
 .menu div {
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
     cursor: pointer;
@@ -167,6 +167,7 @@ nav {
 }
 
 .menu-mobile .menu-overlay a {
+    font-family: 'Courier New', Courier, monospace;
     display: block;
     padding: 15px 40px;
     color: white;
