@@ -182,20 +182,18 @@ nav {
 
 
 .cover-container {
-    width: auto;
-    height: 100%;
-    padding: 2% 8% 8% 8%;
+    padding: 0% 0% 0% 8%;
 }
 
 .cover-col-left {
-    padding-top: 8%;
+    padding-top: 10%;
 }
 
 .seed-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 45%;
 }
 
 .cover-header {
@@ -208,11 +206,7 @@ nav {
 }
 
 .cover-image {
-    height: 70%;
-    width: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .spacer1 {
