@@ -182,18 +182,20 @@ nav {
 
 
 .cover-container {
-    padding: 0% 0% 0% 8%;
+    width: auto;
+    height: 100%;
+    padding: 2% 8% 8% 8%;
 }
 
 .cover-col-left {
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 .seed-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 35%;
 }
 
 .cover-header {
@@ -206,7 +208,11 @@ nav {
 }
 
 .cover-image {
-    width: 100%;
+    height: 70%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .spacer1 {
@@ -263,6 +269,26 @@ nav {
 .ss-persona-image {
     width: 100%;
     height: auto;
+}
+
+.persona-text {
+    padding-top: 20%;
+}
+
+.swot-container {
+    padding: 0% 8% 0% 8%;
+}
+
+.swot1 {
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+}
+
+.swot2 {
+    width: 100%;
+    height: auto;
+    padding-top: 18%;
 }
 
 @media only screen and (max-width: 1020px) {
