@@ -215,9 +215,11 @@ nav {
 }
 
 .seed-share-image {
-    width: 100%;
+    width: 90%;
     height: auto;
+    padding-left: 10%;
 } 
+
 
 .case-study-title {
     padding: 15% 0% 0% 10%;
@@ -228,21 +230,20 @@ nav {
 
 .case-study-title p1 {
     color: #B68042;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
 .case-study-title p2 {
     color: white;
     font-size: 1.2rem;
-    line-height: 2rem;
     font-weight: 300;
 }
 
 .ss-case-study-link {
     color: white;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .ss-case-study-link:hover {
@@ -252,13 +253,13 @@ nav {
 }
 
 .background-hc {
-    padding: 0% 8% 0% 8%;
+    padding: 2% 8% 2% 8%;
     width: 100%;
     height: auto;
 }
 
 .ccs-image {
-    width: 100%;
+    width: 95%;
     height: auto;
 } 
 
@@ -268,7 +269,7 @@ nav {
 
 .case-study-title2 p1 {
     color: #B68042;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
@@ -280,7 +281,7 @@ nav {
 .ccs-case-study-link {
     color: white;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .ccs-case-study-link:hover {
@@ -291,7 +292,7 @@ nav {
 
 .case-study-title3 p1 {
     color: #B68042;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.5rem;
     font-weight: 400;
 }
@@ -305,7 +306,7 @@ nav {
 .fp-case-study-link {
     color: white;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .fp-case-study-link:hover {
@@ -319,7 +320,7 @@ nav {
 }
 
 .fp-image {
-    width: 95%;
+    width: 90%;
     height: auto;
 } 
 
@@ -362,15 +363,7 @@ nav {
 }
 
 
-@media screen and (max-width: 800px) {
-    .grid-nav-container {
-        grid-template-columns: 1fr;
-    }    
-    #nav-menu {
-        justify-content: center;
-        align-items: center;
-        display: inline-flex;
-    }
+@media screen and (max-width: 800px) {   
     .hero-image1 {
         padding-left: 30%;
         transform: scale(.8);
@@ -378,6 +371,9 @@ nav {
     .hero-image2 {
         padding-left: 10%;
         transform: scale(.8);        
+    }
+    .ux-ui-text {
+        font-size: 1.3rem;
     }
     .scroll {
         display: none;
@@ -387,7 +383,6 @@ nav {
     }
     .case-study-title p2 {
         font-size: .8rem;
-        line-height: .1rem;
     } 
     .ss-case-study-link {
         font-size: .8rem;
@@ -421,7 +416,7 @@ nav {
         line-height: .1rem;
     }  
     .background-hc {
-        transform: scale(.7); 
+        transform: scale(.9); 
         padding: 0% 2% 0% 2%;
     }
     .footer-nav-item {
@@ -474,7 +469,7 @@ nav {
     }
 
     .background-hc {
-        transform: scale(.4); 
+        transform: scale(.5); 
         padding: none;
     }
     .case-study-title2 {

@@ -193,24 +193,25 @@ nav {
 
 .contact-text {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
 .friends-text {
     padding-top: 5%;
     color: #B68042;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
 .linkedin-text {
     color: #B68042;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
 .linkedin-text:hover {
+    color: #B68042;
     text-decoration-line: underline;
     cursor: pointer;
 }
@@ -270,13 +271,13 @@ nav {
         line-height: 1.8rem;
     } 
     .contact-text {
-        font-size: 1.1rem; 
+        font-size: 1rem; 
     } 
     .friends-text {
-        font-size: 1.1rem; 
+        font-size: 1rem; 
     }
     .linkedin-text {
-        font-size: 1.1rem;    
+        font-size: 1rem;    
     }
     .footer-nav-item {
         padding: 0% 0% 5% 0%;
@@ -300,7 +301,7 @@ nav {
         font-size: .9rem;
     }
     .spacer4 {
-        height: 3rem;
+        height: 6rem;
     }
     .spacer5 {
         height: 1rem;
