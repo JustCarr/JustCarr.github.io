@@ -193,7 +193,7 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 35%;
 }
 
 .cover-header {
@@ -285,6 +285,107 @@ nav {
     padding-top: 18%;
 }
 
+.problem-statement-container {
+    width: 100%;
+    height: auto;
+    padding: 0 20% 8% 8%;
+    background: url(../images/Line_Flower3.svg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+.spacer3 {
+    height: 7rem;
+}
+
+.user-flow-container {
+    width: 100%;
+    height: auto;
+    padding: 0% 8% 0% 8%;
+}
+.user-flow-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+.iterations-container {
+    width: 100%;
+    height: auto;
+    padding: 0% 8% 0% 8%;
+}
+
+.iteration-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+.prototype-container {
+    width: 100%;
+    height: auto;
+    padding: 0% 8% 0% 8%;
+}
+
+.prototype-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: auto;
+}
+
+.final-container {
+    width: 100%;
+    height: auto;
+    padding: 0% 0% 0% 8%;
+}
+
+.ss-final-image {
+    width: 100%;
+    height: auto;
+}
+
+.case-study-headings-final {
+    font-family: 'PT Serif', serif;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    padding-top: 15%;
+}
+
+.final-text {
+    padding-top: 3%;
+}
+
+.spacer4 {
+    height: 4rem;
+}
+
+.footer-nav-item {
+    padding: 2%;
+}
+
+.footer-nav-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-nav-text:hover {
+    color:  #B68042;
+    cursor: pointer;
+}
+
+
+
+
+
 @media only screen and (max-width: 1020px) {
     .menu-mobile  {
         display: flex;
@@ -324,6 +425,36 @@ nav {
     .zucchini-image {
         width: 90%;
     }
+    .persona-text {
+        padding-top: 0;
+    }
+    .spacer2 {
+        height: 2rem;
+    }
+    .spacer3 {
+        height: 3rem;
+    }  
+    .swot2 {
+        padding-top: 25%; 
+    }   
+    .problem-statement-container {
+        padding: 0 8% 0% 8%;
+        background-size: 50%;
+    } 
+    .iteration-image {
+        width: 90%;
+    } 
+    .case-study-headings-final {
+        font-size: 1.6rem;
+        padding-top: 0%;
+    } 
+    .footer-nav-item {
+        padding: 2% .5% 5% .5%;
+    }
+    .footer-nav-text {
+        font-size: .8rem;
+    }    
+
 }  
 
 @media screen and (max-width: 600px) {
@@ -340,6 +471,34 @@ nav {
     }
     .project-details {
         width: 100%;
+        padding-bottom: 15%;
+    }
+    .swot1 {
+        padding-top: 5%;
+    }     
+    .swot2 {
+        padding-top: 10%; 
+    } 
+    .zucchini-image {
+        padding: 2% 0% 10% 0%;
+    }
+    .problem-statement-container {
+        background-size: 90%;
+    }  
+    .user-flow-image {
+        width: 100%;
+    }   
+    .iteration-image {
+        width: 100%;
+    } 
+    .iterations-container {
+        padding: 0% 6% 0% 6%;
+    }
+    .footer-nav-item {
+        padding: 0% .5% 3% .5%;
+    }
+    .spacer4 {
+        height: 1.5rem;
     }
     
 
